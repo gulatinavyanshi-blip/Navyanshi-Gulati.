@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navyanshi Gulati — Social Media Strategist</title>
+<meta name="description" content="Navyanshi Gulati — Social Media Strategist. Influencer marketing, content strategy and AI automation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#12131a;
+    --paper:#ffffff;
+    --mist:#e9eef0;
+    --coral:#ff4b3e;
+    --teal:#0f9d8c;
+    --ink-70: rgba(18,19,26,.7);
+    --ink-45: rgba(18,19,26,.45);
+    --ink-12: rgba(18,19,26,.12);
+    --maxw: 1120px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
+  }
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter', sans-serif;
+    font-size:16px;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.disp{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    letter-spacing:-0.01em;
+    margin:0;
+  }
+  .mono{
+    font-family:'IBM Plex Mono', monospace;
+  }
+  .wrap{
+    max-width:var(--maxw);
+    margin:0 auto;
+    padding:0 28px;
+  }
+  a{color:inherit;}
+  img{max-width:100%; display:block;}
+
+  /* ---------- NAV ---------- */
+  header.site-nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(255,255,255,.88);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--ink-12);
+  }
+  .nav-inner{
+    max-width:var(--maxw); margin:0 auto; padding:16px 28px;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .nav-mark{
+    font-family:'Fraunces', serif; font-weight:600; font-size:19px;
+  }
+  .nav-mark span{color:var(--coral);}
+  nav.nav-links{display:flex; gap:26px;}
+  nav.nav-links a{
+    font-family:'IBM Plex Mono', monospace; font-size:12px; letter-spacing:.06em;
+    text-transform:uppercase; text-decoration:none; color:var(--ink-70);
+    transition:color .15s ease;
+  }
+  nav.nav-links a:hover, nav.nav-links a:focus-visible{color:var(--coral);}
+  @media (max-width:720px){ nav.nav-links{display:none;} }
+
+  /* ---------- TICKER ---------- */
+  .ticker{
+    background:var(--ink); color:var(--paper);
+    overflow:hidden; white-space:nowrap;
+    border-bottom:1px solid var(--ink-12);
+  }
+  .ticker-track{
+    display:inline-flex;
+    animation:scroll-left 34s linear infinite;
+    padding:9px 0;
+  }
+  @keyframes scroll-left{
+    from{transform:translateX(0);}
+    to{transform:translateX(-50%);}
+  }
+  .ticker-item{
+    font-family:'IBM Plex Mono', monospace; font-size:12px; letter-spacing:.03em;
+    padding:0 22px; display:inline-flex; align-items:center; gap:10px;
+    color:#f3f2ee;
+  }
+  .ticker-item b{color:#ffb7ae;}
+  .ticker-item .sep{color:var(--teal);}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    padding:96px 0 72px;
+    position:relative;
+    border-bottom:1px solid var(--ink-12);
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace; font-size:12px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--coral); margin-bottom:22px; display:block;
+  }
+  .hero h1{
+    font-size:clamp(46px, 8vw, 92px);
+    line-height:0.98;
+  }
+  .hero h1 em{
+    font-style:italic; font-weight:500; color:var(--teal);
+  }
+  .hero-sub{
+    margin-top:22px; max-width:620px;
+    font-size:19px; color:var(--ink-70);
+  }
+  .hero-tag{
+    font-family:'Fraunces', serif; font-style:italic; font-weight:500;
+    font-size:22px; margin-top:26px; max-width:560px; color:var(--ink);
+  }
+  .hero-contacts{
+    display:flex; flex-wrap:wrap; gap:12px; margin-top:38px;
+  }
+  .chip{
+    font-family:'IBM Plex Mono', monospace; font-size:13px;
+    border:1px solid var(--ink-12); border-radius:999px; padding:9px 18px;
+    text-decoration:none; display:inline-flex; align-items:center; gap:8px;
+    transition:border-color .15s ease, background .15s ease;
+  }
+  .chip:hover{border-color:var(--coral); background:var(--mist);}
+  .hero-frame{
+    position:absolute; right:28px; top:104px; width:196px; text-align:right;
+    font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-45);
+    line-height:1.7;
+  }
+  @media (max-width:900px){ .hero-frame{display:none;} }
+
+  /* ---------- SECTION SCAFFOLD ---------- */
+  section{
+    padding:88px 0;
+    border-bottom:1px solid var(--ink-12);
+  }
+  .section-head{
+    display:flex; align-items:flex-end; justify-content:space-between; gap:24px;
+    margin-bottom:52px; flex-wrap:wrap;
+  }
+  .case-no{
+    font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--ink-45);
+    letter-spacing:.08em; display:block; margin-bottom:10px;
+  }
+  .section-head h2{
+    font-size:clamp(28px, 4vw, 42px);
+  }
+  .section-kicker{
+    max-width:340px; color:var(--ink-70); font-size:15px; text-align:right;
+  }
+  @media (max-width:720px){ .section-kicker{text-align:left;} }
+
+  .reveal{
+    opacity:0; transform:translateY(18px);
+    transition:opacity .6s ease, transform .6s ease;
+  }
+  .reveal.in{opacity:1; transform:translateY(0);}
+
+  /* ---------- ABOUT ---------- */
+  .about-grid{
+    display:grid; grid-template-columns: 1.15fr 0.85fr; gap:64px;
+  }
+  @media (max-width:820px){ .about-grid{grid-template-columns:1fr; gap:36px;} }
+  .about-lede{
+    font-family:'Fraunces', serif; font-weight:500; font-size:24px; line-height:1.4;
+    margin-bottom:22px;
+  }
+  .about-body p{ color:var(--ink-70); margin:0 0 16px; }
+  .pill-row{
+    display:flex; flex-wrap:wrap; gap:10px; margin-top:26px;
+  }
+  .pill{
+    background:var(--mist); border-radius:8px; padding:9px 14px;
+    font-size:13px; font-weight:500;
+  }
+  .monogram{
+    width:100%; aspect-ratio:1/1; max-height:320px;
+    background:var(--ink); border-radius:18px;
+    display:flex; align-items:center; justify-content:center;
+    position:relative; overflow:hidden;
+  }
+  .monogram span{
+    font-family:'Fraunces', serif; font-size:120px; color:var(--paper); font-weight:600;
+  }
+  .monogram::after{
+    content:""; position:absolute; inset:0;
+    background: radial-gradient(circle at 75% 20%, rgba(255,75,62,.55), transparent 45%),
+                radial-gradient(circle at 15% 85%, rgba(15,157,140,.5), transparent 45%);
+  }
+
+  /* ---------- EXPERIENCE ---------- */
+  .exp-card{
+    display:grid; grid-template-columns: 1fr 2fr; gap:36px;
+    padding:34px 0; border-top:1px solid var(--ink-12);
+  }
+  .exp-card:last-child{border-bottom:none;}
+  @media (max-width:720px){ .exp-card{grid-template-columns:1fr; gap:14px;} }
+  .exp-role{ }
+  .exp-role h3{font-size:22px;}
+  .exp-role .company{color:var(--coral); font-weight:600; font-size:14px; margin-top:6px; display:block;}
+  .exp-role .role-type{font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--ink-45); margin-top:6px; display:block;}
+  .exp-body ul{margin:0; padding:0; list-style:none;}
+  .exp-body li{
+    position:relative; padding-left:22px; margin-bottom:10px; color:var(--ink-70);
+  }
+  .exp-body li::before{
+    content:"—"; position:absolute; left:0; color:var(--teal);
+  }
+
+  /* ---------- AUTOMATION ---------- */
+  .automation{background:var(--ink); color:var(--paper);}
+  .automation .case-no, .automation .section-kicker{color:rgba(255,255,255,.55);}
+  .automation .section-head h2{color:var(--paper);}
+  .flow{
+    display:flex; align-items:center; gap:0; overflow-x:auto; padding:28px 4px 14px;
+    margin-bottom:14px;
+  }
+  .flow-node{
+    flex:0 0 auto; width:150px; text-align:center;
+  }
+  .flow-node .box{
+    border:1px solid rgba(255,255,255,.22); border-radius:12px; padding:18px 10px;
+    background:rgba(255,255,255,.04);
+  }
+  .flow-node .icon{font-size:22px; margin-bottom:8px;}
+  .flow-node .label{font-weight:600; font-size:14px;}
+  .flow-node .sub{font-family:'IBM Plex Mono', monospace; font-size:10.5px; color:rgba(255,255,255,.5); margin-top:6px;}
+  .flow-arrow{
+    flex:0 0 auto; width:46px; height:2px; position:relative; margin:0 -2px;
+    background: repeating-linear-gradient(90deg, var(--teal) 0 8px, transparent 8px 14px);
+  }
+  .flow-arrow::after{
+    content:""; position:absolute; right:-1px; top:50%; transform:translateY(-50%);
+    border-left:7px solid var(--teal); border-top:5px solid transparent; border-bottom:5px solid transparent;
+  }
+  @media (max-width:720px){ .flow{flex-direction:column; align-items:flex-start;} .flow-arrow{width:2px; height:30px; margin:2px 0 2px 74px; background: repeating-linear-gradient(180deg, var(--teal) 0 8px, transparent 8px 14px);} .flow-arrow::after{right:auto; top:auto; left:50%; bottom:-1px; transform:translateX(-50%); border-left:5px solid transparent; border-right:5px solid transparent; border-top:7px solid var(--teal); border-bottom:none;} .flow-node{width:100%; text-align:left;} }
+  .automation-result{
+    font-family:'Fraunces', serif; font-style:italic; font-weight:500; font-size:19px;
+    max-width:640px; color:rgba(255,255,255,.9); margin-top:18px; line-height:1.5;
+    border-left:2px solid var(--coral); padding-left:20px;
+  }
+
+  /* ---------- CASE STUDIES ---------- */
+  .case-grid{
+    display:grid; grid-template-columns:1fr 1fr; gap:26px;
+  }
+  @media (max-width:820px){ .case-grid{grid-template-columns:1fr;} }
+  .case-card{
+    background:var(--mist); border-radius:16px; padding:30px;
+    display:flex; flex-direction:column; height:100%;
+  }
+  .case-card .tag{
+    font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--teal); margin-bottom:12px;
+  }
+  .case-card h3{font-size:23px; margin-bottom:4px;}
+  .case-card .role-line{font-size:13px; color:var(--ink-45); margin-bottom:16px; display:block;}
+  .case-card p{color:var(--ink-70); font-size:14.5px; margin:0 0 8px;}
+  .case-card ul{margin:12px 0 0; padding-left:18px; color:var(--ink-70); font-size:14.5px;}
+  .case-card ul li{margin-bottom:6px;}
+  .case-stats{display:flex; gap:22px; margin-top:auto; padding-top:20px;}
+  .case-stats div{}
+  .case-stats .num{font-family:'IBM Plex Mono', monospace; font-weight:600; font-size:22px; color:var(--coral);}
+  .case-stats .lbl{font-size:11.5px; color:var(--ink-45); margin-top:2px;}
+
+  /* deep dive */
+  .deepdive{
+    margin-top:44px; border:1px solid var(--ink-12); border-radius:18px; padding:44px; overflow:hidden;
+  }
+  .deepdive-top{display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; margin-bottom:28px;}
+  .deepdive h3{font-size:28px;}
+  .deepdive .role-line{color:var(--ink-45); font-size:13px; margin-top:8px; display:block;}
+  .oar{display:grid; grid-template-columns:repeat(3,1fr); gap:26px; margin-bottom:32px;}
+  @media (max-width:760px){ .oar{grid-template-columns:1fr;} }
+  .oar-block .kicker{font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--coral); letter-spacing:.08em; margin-bottom:10px;}
+  .oar-block p{color:var(--ink-70); font-size:14.5px; margin:0;}
+  .deepdive-stats{display:flex; gap:48px; flex-wrap:wrap; border-top:1px solid var(--ink-12); padding-top:28px;}
+  .deepdive-stats .num{font-family:'IBM Plex Mono', monospace; font-weight:700; font-size:38px; color:var(--ink);}
+  .deepdive-stats .lbl{font-size:12.5px; color:var(--ink-45); margin-top:4px;}
+
+
+  /* ---------- CONSUMER GROWTH ---------- */
+  .consumer-growth{background:#fafbfb;}
+  .consumer-intro{
+    max-width:760px; color:var(--ink-70); font-size:16px; margin:-22px 0 42px;
+  }
+  .growth-case{
+    border:1px solid var(--ink-12); border-radius:20px; padding:34px;
+    margin-bottom:34px; background:var(--paper);
+  }
+  .growth-case:last-child{margin-bottom:0;}
+  .growth-case-head{
+    display:flex; justify-content:space-between; align-items:flex-start;
+    gap:24px; flex-wrap:wrap; margin-bottom:28px;
+  }
+  .growth-case .tag{
+    font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.08em;
+    text-transform:uppercase; color:var(--teal); margin-bottom:10px;
+  }
+  .growth-case h3{font-size:30px; margin-bottom:5px;}
+  .growth-case .role-line{font-size:13px; color:var(--ink-45);}
+  .insta-link{
+    font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.04em;
+    border:1px solid var(--ink-12); border-radius:999px; padding:9px 13px;
+    text-decoration:none; white-space:nowrap;
+  }
+  .insta-link:hover{border-color:var(--coral); background:var(--mist);}
+  .profile-shot{
+    display:grid; grid-template-columns:280px 1fr; gap:24px; align-items:stretch;
+    margin-bottom:24px;
+  }
+  .profile-shot img{
+    width:100%; height:100%; min-height:250px; object-fit:cover;
+    border-radius:14px; border:1px solid var(--ink-12);
+  }
+  .content-gallery{
+    display:grid; grid-template-columns:repeat(2,1fr); gap:14px;
+  }
+  .content-gallery img{
+    width:100%; height:210px; object-fit:cover; object-position:center;
+    border-radius:12px; border:1px solid var(--ink-12); background:var(--mist);
+  }
+  .content-gallery img.wide{grid-column:1 / -1; height:250px;}
+  .growth-analysis{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:24px;
+    margin-top:28px; padding-top:28px; border-top:1px solid var(--ink-12);
+  }
+  .growth-block .kicker{
+    font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--coral);
+    letter-spacing:.08em; text-transform:uppercase; margin-bottom:9px;
+  }
+  .growth-block p{font-size:14px; color:var(--ink-70); margin:0;}
+  .journey{
+    display:flex; flex-wrap:wrap; align-items:center; gap:8px;
+    margin-top:12px; font-family:'IBM Plex Mono',monospace; font-size:11px;
+  }
+  .journey span{
+    border:1px solid var(--ink-12); border-radius:999px; padding:6px 9px;
+    background:#fff;
+  }
+  .journey b{color:var(--teal); font-weight:500;}
+  .growth-pillars{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:9px; margin-top:12px;
+  }
+  .growth-pillars span{
+    background:var(--mist); border-radius:8px; padding:9px 10px; font-size:12px;
+  }
+  .experiments{
+    margin-top:26px; padding-top:26px; border-top:1px dashed var(--ink-12);
+  }
+  .experiments h4{
+    font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.06em;
+    text-transform:uppercase; margin:0 0 14px;
+  }
+  .experiment-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:12px;}
+  .experiment{
+    border:1px solid var(--ink-12); border-radius:12px; padding:15px;
+  }
+  .experiment b{font-family:'Fraunces',serif; font-size:16px; font-weight:600;}
+  .experiment small{display:block; margin-top:8px; color:var(--ink-45); font-size:11.5px;}
+  .growth-funnel{
+    margin-top:22px; padding:18px; background:var(--ink); color:var(--paper);
+    border-radius:12px; font-family:'IBM Plex Mono',monospace; font-size:11px;
+    line-height:1.8;
+  }
+  .growth-funnel strong{color:#ffb7ae; font-weight:600;}
+  @media (max-width:820px){
+    .profile-shot{grid-template-columns:1fr;}
+    .growth-analysis{grid-template-columns:1fr;}
+    .growth-pillars{grid-template-columns:repeat(2,1fr);}
+    .experiment-grid{grid-template-columns:1fr;}
+  }
+  @media (max-width:560px){
+    .growth-case{padding:22px;}
+    .content-gallery{grid-template-columns:1fr;}
+    .content-gallery img.wide{grid-column:auto; height:210px;}
+  }
+
+  /* ---------- PERFORMANCE ---------- */
+  .perf-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-bottom:44px;}
+  @media (max-width:820px){ .perf-grid{grid-template-columns:1fr 1fr;} }
+  @media (max-width:520px){ .perf-grid{grid-template-columns:1fr;} }
+  .stat-tile{border:1px solid var(--ink-12); border-radius:14px; padding:22px;}
+  .stat-tile .num{font-family:'IBM Plex Mono', monospace; font-weight:600; font-size:28px;}
+  .stat-tile .lbl{font-size:12.5px; color:var(--ink-45); margin-top:6px;}
+  .perf-sub{font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--ink-45); margin-bottom:16px;}
+  .perf-block{margin-bottom:56px;}
+  .perf-block:last-child{margin-bottom:0;}
+  .perf-block-head{display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:10px; margin-bottom:6px;}
+  .perf-block-head h3{font-size:20px;}
+  .perf-note{color:var(--ink-70); font-size:14px; max-width:680px; margin-top:16px;}
+  .source{font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-45); margin-top:10px; display:block;}
+
+  .platform-split{display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:8px;}
+  @media (max-width:640px){ .platform-split{grid-template-columns:1fr;} }
+  .platform-card{border:1px solid var(--ink-12); border-radius:14px; padding:22px;}
+  .platform-card h4{font-family:'IBM Plex Mono', monospace; font-size:13px; letter-spacing:.04em; margin-bottom:14px; text-transform:uppercase;}
+  .platform-card .row{display:flex; justify-content:space-between; padding:7px 0; border-top:1px dashed var(--ink-12); font-size:14px;}
+  .platform-card .row:first-of-type{border-top:none;}
+  .platform-card .row b{font-family:'IBM Plex Mono', monospace;}
+
+  .reel-card{border:1px solid var(--ink-12); border-radius:14px; padding:26px; margin-top:8px;}
+  .reel-title{font-family:'Fraunces', serif; font-style:italic; font-size:19px; margin-bottom:16px;}
+  .reel-stats{display:grid; grid-template-columns:repeat(3,1fr); gap:14px 24px;}
+  @media (max-width:560px){ .reel-stats{grid-template-columns:repeat(2,1fr);} }
+  .reel-stats .num{font-family:'IBM Plex Mono', monospace; font-weight:600; font-size:20px;}
+  .reel-stats .lbl{font-size:11px; color:var(--ink-45); margin-top:2px;}
+
+  .yt-bars{display:flex; align-items:flex-end; gap:10px; height:120px; margin-top:24px;}
+  .yt-bar{flex:1; background:var(--teal); border-radius:4px 4px 0 0; position:relative;}
+  .yt-bar .v{position:absolute; top:-20px; left:0; right:0; text-align:center; font-family:'IBM Plex Mono', monospace; font-size:10.5px; color:var(--ink-45);}
+  .yt-bar .d{position:absolute; bottom:-20px; left:0; right:0; text-align:center; font-family:'IBM Plex Mono', monospace; font-size:10px; color:var(--ink-45);}
+
+  /* ---------- CLIENTS ---------- */
+  .client-row{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:16px;
+  }
+  @media (max-width:820px){ .client-row{grid-template-columns:repeat(2,1fr);} }
+  .client-tile{
+    border:1px solid var(--ink-12); border-radius:14px; padding:24px 20px;
+    text-decoration:none; color:var(--ink); transition:border-color .15s ease, transform .15s ease;
+    display:flex; flex-direction:column; gap:6px; min-height:118px; justify-content:space-between;
+  }
+  .client-tile:hover{border-color:var(--coral); transform:translateY(-3px);}
+  .client-tile .name{font-family:'Fraunces', serif; font-weight:600; font-size:17px;}
+  .client-tile .cat{font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--ink-45); text-transform:uppercase; letter-spacing:.04em;}
+  .client-tile .go{font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--coral);}
+
+  /* ---------- EDUCATION ---------- */
+  .edu-grid{display:grid; grid-template-columns:1.3fr 1fr; gap:50px;}
+  @media (max-width:820px){ .edu-grid{grid-template-columns:1fr; gap:34px;} }
+  .edu-card h3{font-size:22px;}
+  .edu-card .place{color:var(--ink-70); margin-top:6px; font-size:14.5px;}
+  .edu-card .meta{font-family:'IBM Plex Mono', monospace; font-size:12.5px; color:var(--ink-45); margin-top:12px;}
+  .gpa{
+    display:inline-flex; align-items:baseline; gap:6px; margin-top:16px;
+    font-family:'IBM Plex Mono', monospace;
+  }
+  .gpa .num{font-size:30px; font-weight:600; color:var(--coral);}
+  .gpa .lbl{font-size:12px; color:var(--ink-45);}
+  .cert-list{list-style:none; margin:14px 0 0; padding:0;}
+  .cert-list li{padding:10px 0; border-top:1px solid var(--ink-12); font-size:14.5px; color:var(--ink-70);}
+  .cert-list li:first-child{border-top:none;}
+  .positioning{
+    margin-top:28px; background:var(--mist); border-radius:14px; padding:22px;
+  }
+  .positioning .lbl{font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--teal); letter-spacing:.06em; margin-bottom:8px;}
+  .positioning .val{font-weight:600; font-size:15.5px;}
+  .positioning .open{font-size:13px; color:var(--ink-70); margin-top:6px;}
+
+  /* ---------- CONTACT / FOOTER ---------- */
+  footer.contact{
+    background:var(--ink); color:var(--paper); padding:100px 0 50px; border-bottom:none;
+  }
+  footer.contact h2{
+    font-size:clamp(34px, 6vw, 62px); max-width:760px; color:var(--paper);
+  }
+  footer.contact .lede{color:rgba(255,255,255,.6); margin-top:18px; max-width:520px; font-size:16px;}
+  .contact-links{
+    display:grid; grid-template-columns:repeat(4,1fr); gap:1px; margin-top:56px;
+    background:rgba(255,255,255,.14); border-radius:14px; overflow:hidden;
+  }
+  @media (max-width:820px){ .contact-links{grid-template-columns:repeat(2,1fr);} }
+  .contact-links a{
+    background:var(--ink); padding:26px 22px; text-decoration:none; display:block;
+    transition:background .15s ease;
+  }
+  .contact-links a:hover{background:rgba(255,255,255,.06);}
+  .contact-links .k{font-family:'IBM Plex Mono', monospace; font-size:11px; color:var(--coral); letter-spacing:.06em; margin-bottom:8px;}
+  .contact-links .v{font-size:14.5px; font-weight:500; word-break:break-word;}
+  .foot-meta{
+    display:flex; justify-content:space-between; margin-top:56px; flex-wrap:wrap; gap:12px;
+    font-family:'IBM Plex Mono', monospace; font-size:11.5px; color:rgba(255,255,255,.4);
+  }
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <div class="nav-mark">Navyanshi<span>.</span>Gulati</div>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#automation">Automation</a>
+      <a href="#cases">Case Studies</a>
+      <a href="#consumer-growth">Consumer Growth</a>
+      <a href="#performance">Performance</a>
+      <a href="#clients">Clients</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track" id="tickerTrack"></div>
+</div>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Portfolio — Social Media Strategist</span>
+    <h1>Stories that<br>get <em>measured.</em></h1>
+    <p class="hero-sub">Navyanshi Gulati — Influencer Marketing · Content Strategy · AI Automation.</p>
+    <p class="hero-tag">"Turning brands into stories, and stories into measurable growth."</p>
+    <div class="hero-contacts">
+      <a class="chip" href="mailto:gulatinavyanshi@gmail.com">✉ gulatinavyanshi@gmail.com</a>
+      <a class="chip" href="tel:+918874934816">☎ +91 88749 34816</a>
+      <a class="chip" href="https://www.linkedin.com/in/navyanshi-gulati-76aa80266" target="_blank" rel="noopener">in — LinkedIn</a>
+    </div>
+    <div class="hero-frame mono">
+      CASE FILE 001–009<br>
+      STRATEGY · CREATORS · SYSTEMS<br>
+      OPEN TO FULL-TIME ROLES
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="case-no">CASE FILE 001</span>
+        <h2>About</h2>
+      </div>
+      <p class="section-kicker">Creativity, guided by data and automation.</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-body reveal">
+        <p class="about-lede">I'm a Social Media Strategist who combines human insight with AI precision — building strategies that are visually engaging, measurable, and scalable.</p>
+        <p>My strength is in influencer collaboration: identifying the right creators, shaping the narrative, and directing content that earns trust rather than just views. I pair that with hands-on experience in Instagram growth and automation tools like ManyChat, N8N, and Notion.</p>
+        <p>Good marketing isn't just about virality — it's about building meaningful digital relationships.</p>
+        <div class="pill-row">
+          <span class="pill">Client Management</span>
+          <span class="pill">Influencer Collaboration</span>
+          <span class="pill">Automation</span>
+          <span class="pill">Team Collaboration</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="monogram"><span>NG</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="case-no">CASE FILE 002</span>
+        <h2>Professional Experience</h2>
+      </div>
+      <p class="section-kicker">Where strategy meets execution.</p>
+    </div>
+
+    <div class="exp-card reveal">
+      <div class="exp-role">
+        <h3>WMS Dubai</h3>
+        <span class="company">Global Warehousing Solutions</span>
+        <span class="role-type">Direct role · Social Media Strategy</span>
+      </div>
+      <div class="exp-body">
+        <ul>
+          <li>Built a LinkedIn-first B2B content strategy for the UAE market.</li>
+          <li>Expanded UAE audience reach by 40%.</li>
+          <li>Created logistics-focused content pillars that strengthened thought-leadership positioning.</li>
+          <li>Independently handled strategy and execution for the account.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-card reveal">
+      <div class="exp-role">
+        <h3>Sunrise Hospital</h3>
+        <span class="company">Gynaecology — Dr. Nikita Trehan</span>
+        <span class="role-type">Direct role · Influencer &amp; Social Media Strategy</span>
+      </div>
+      <div class="exp-body">
+        <ul>
+          <li>Led influencer-led health content designed to build trust and awareness.</li>
+          <li>Delivered 8K views and a 35% engagement lift through relatable, human-centric content.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="automation" id="automation">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="case-no">CASE FILE 003</span>
+        <h2>Automation in Action</h2>
+      </div>
+      <p class="section-kicker">Engagement data, automated end to end.</p>
+    </div>
+    <p style="color:rgba(255,255,255,.75); max-width:640px; font-size:15px;" class="reveal">Built an N8N workflow that extracts post-level engagement data directly from Meta / Instagram and compiles it for real-time strategy decisions — no manual reporting.</p>
+
+    <div class="flow reveal" role="img" aria-label="Workflow: Instagram and Meta data is downloaded, processed through an N8N workflow, and compiled into Google Sheets to inform content strategy.">
+      <div class="flow-node">
+        <div class="box"><div class="icon">📸</div><div class="label">Instagram / Meta</div><div class="sub">Live post data</div></div>
+      </div>
+      <div class="flow-arrow"></div>
+      <div class="flow-node">
+        <div class="box"><div class="icon">⚙️</div><div class="label">N8N Workflow</div><div class="sub">Automated extraction</div></div>
+      </div>
+      <div class="flow-arrow"></div>
+      <div class="flow-node">
+        <div class="box"><div class="icon">📊</div><div class="label">Likes · Comments · Shares · Saves</div><div class="sub">Engagement metrics</div></div>
+      </div>
+      <div class="flow-arrow"></div>
+      <div class="flow-node">
+        <div class="box"><div class="icon">📑</div><div class="label">Google Sheets</div><div class="sub">Compiled dashboard</div></div>
+      </div>
+      <div class="flow-arrow"></div>
+      <div class="flow-node">
+        <div class="box"><div class="icon">🎯</div><div class="label">Content Strategy</div><div class="sub">Data-led decisions</div></div>
+      </div>
+    </div>
+
+    <p class="automation-result reveal">Result: engagement reporting that used to take hours now compiles automatically — freeing time for strategy, not spreadsheets.</p>
+  </div>
+</section>
+
+<section id="cases">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="case-no">CASE FILE 004</span>
+        <h2>Client Portfolio</h2>
+      </div>
+      <p class="section-kicker">Two brands, two very different growth stories.</p>
+    </div>
+
+    <div class="case-grid reveal">
+      <div class="case-card">
+        <span class="tag">B2B · Logistics</span>
+        <h3>WMS Dubai</h3>
+        <span class="role-line">Global Warehousing Solutions</span>
+        <p>Built a LinkedIn-first B2B content strategy for the UAE market, with logistics-focused content pillars positioning the brand as a thought leader.</p>
+        <div class="case-stats">
+          <div><div class="num">+40%</div><div class="lbl">Reach growth</div></div>
+        </div>
+      </div>
+      <div class="case-card">
+        <span class="tag">Healthcare · Influencer</span>
+        <h3>Sunrise Hospital</h3>
+        <span class="role-line">Gynaecology — Dr. Nikita Trehan</span>
+        <p>Led an influencer collaboration to build trust and awareness around women's health, scripting reels that showed her real explanation process with patients.</p>
+        <div class="case-stats">
+          <div><div class="num">8K</div><div class="lbl">Views</div></div>
+          <div><div class="num">+35%</div><div class="lbl">Engagement</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="deepdive reveal">
+      <div class="deepdive-top">
+        <div>
+          <h3>Influencer Collaboration Case Study</h3>
+          <span class="role-line">Dr. Nikita Trehan — Sunrise Hospital, Gynaecology</span>
+        </div>
+      </div>
+      <div class="oar">
+        <div class="oar-block">
+          <div class="kicker">Objective</div>
+          <p>Build patient trust and spread awareness — not just visibility — for a leading gynaecologist ahead of a major public conference.</p>
+        </div>
+        <div class="oar-block">
+          <div class="kicker">Action</div>
+          <p>Owned the collaboration end to end: scripted reels around her real explanation process before procedures, coordinated the shoot, wrote captions, and managed her directly across Instagram — reframing clinical care into a relatable, human story that eased patient anxiety.</p>
+        </div>
+        <div class="oar-block">
+          <div class="kicker">Result</div>
+          <p>The series reached 8K views and drove a 35% lift in engagement, building credibility that carried into her invitation to a public conference alongside Kiran Bedi.</p>
+        </div>
+      </div>
+      <div class="deepdive-stats">
+        <div><div class="num">8K</div><div class="lbl">Views</div></div>
+        <div><div class="num">35%</div><div class="lbl">Engagement lift</div></div>
+        <div><div class="num">1</div><div class="lbl">Conference invite, with Kiran Bedi</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="consumer-growth" class="consumer-growth">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="case-no">CASE FILE 005</span>
+        <h2>Consumer Growth Strategy</h2>
+      </div>
+      <p class="section-kicker">Turning social observations into a measurable consumer journey.</p>
+    </div>
+
+    <p class="consumer-intro reveal">
+      A strategic analysis of two very different consumer categories — fashion/lifestyle and healthcare —
+      using the supplied Instagram profile and feed screenshots. The frameworks below are strategy hypotheses,
+      not claimed platform-reported results.
+    </p>
+
+    <article class="growth-case reveal">
+      <div class="growth-case-head">
+        <div>
+          <div class="tag">Fashion · Lifestyle · Consumer Growth</div>
+          <h3>Masaki Couture &amp; Café</h3>
+          <span class="role-line">Instagram profile + supplied feed screenshots</span>
+        </div>
+        <a class="insta-link" href="https://www.instagram.com/masaki.couture.cafe" target="_blank" rel="noopener">
+          Instagram ↗
+        </a>
+      </div>
+
+      <div class="profile-shot">
+        <img src="masaki-profile.png" alt="Masaki Couture &amp; Cafe Instagram profile screenshot">
+        <div class="content-gallery">
+          <img src="masaki-content-1.png" alt="Masaki Couture &amp; Cafe fashion content screenshot">
+          <img src="masaki-content-2.png" alt="Masaki Couture &amp; Cafe lifestyle content screenshot">
+          <img class="wide" src="masaki-content-3.png" alt="Masaki Couture &amp; Cafe family and lifestyle content screenshot">
+        </div>
+      </div>
+
+      <div class="growth-analysis">
+        <div class="growth-block">
+          <div class="kicker">Consumer Insight</div>
+          <p>Occasion-wear shoppers need inspiration, confidence and social proof before choosing a fashion destination.</p>
+        </div>
+        <div class="growth-block">
+          <div class="kicker">Audience</div>
+          <p>Style-conscious women and young professionals, occasion/festive shoppers, existing customers, and local lifestyle audiences attracted by the fashion + café combination.</p>
+        </div>
+        <div class="growth-block">
+          <div class="kicker">Pain Points</div>
+          <p>Finding the right look for an occasion, trusting quality/design, and understanding why the brand is different from other local options.</p>
+        </div>
+      </div>
+
+      <div class="growth-block" style="margin-top:26px;">
+        <div class="kicker">Consumer Journey</div>
+        <div class="journey">
+          <span>Discover</span><b>→</b><span>Explore</span><b>→</b><span>Desire</span><b>→</b>
+          <span>Evaluate</span><b>→</b><span>Visit / Purchase</span><b>→</b><span>Experience</span>
+          <b>→</b><span>Share</span><b>→</b><span>Repeat</span>
+        </div>
+      </div>
+
+      <div class="growth-block" style="margin-top:26px;">
+        <div class="kicker">Content System</div>
+        <div class="growth-pillars">
+          <span>Occasion Styling</span>
+          <span>Design Story</span>
+          <span>Product Detail</span>
+          <span>Social Proof</span>
+          <span>Festive / Seasonal Drops</span>
+          <span>Café + Lifestyle</span>
+          <span>Sales / Offers</span>
+        </div>
+      </div>
+
+      <div class="experiments">
+        <h4>Growth Experiments</h4>
+        <div class="experiment-grid">
+          <div class="experiment">
+            <b>Styling vs product-first</b>
+            <small>Measure: saves · shares · profile visits</small>
+          </div>
+          <div class="experiment">
+            <b>Craftsmanship vs final-look</b>
+            <small>Measure: shares · saves · enquiries</small>
+          </div>
+          <div class="experiment">
+            <b>Social proof vs promotional CTA</b>
+            <small>Measure: profile visits · purchase enquiries</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="growth-funnel">
+        <strong>30-DAY SYSTEM</strong><br>
+        Discovery → Consideration → Trust / Community → Conversion / Retention<br>
+        <strong>MEASURE</strong> Reach → Saves / Shares → Profile Visits → DMs / Enquiries → Purchase / Visit → Repeat / UGC
+      </div>
+    </article>
+
+    <article class="growth-case reveal">
+      <div class="growth-case-head">
+        <div>
+          <div class="tag">Healthcare · Women’s Health · Fertility</div>
+          <h3>Sunrise Hospital</h3>
+          <span class="role-line">Instagram profile + supplied feed screenshots</span>
+        </div>
+        <a class="insta-link" href="https://www.instagram.com/sunrisehospital" target="_blank" rel="noopener">
+          Instagram ↗
+        </a>
+      </div>
+
+      <div class="profile-shot">
+        <img src="sunrise-profile.png" alt="Sunrise Hospital Instagram profile screenshot">
+        <div class="content-gallery">
+          <img src="sunrise-content-1.png" alt="Sunrise Hospital fertility and gynecology content screenshot">
+          <img src="sunrise-content-2.png" alt="Sunrise Hospital educational content screenshot">
+        </div>
+      </div>
+
+      <div class="growth-analysis">
+        <div class="growth-block">
+          <div class="kicker">Consumer Insight</div>
+          <p>Healthcare audiences need clarity, credibility and reassurance before taking a high-consideration next step.</p>
+        </div>
+        <div class="growth-block">
+          <div class="kicker">Audience</div>
+          <p>Women researching fertility, pregnancy and gynae health; couples evaluating fertility providers; and audiences seeking trustworthy health information.</p>
+        </div>
+        <div class="growth-block">
+          <div class="kicker">Pain Points</div>
+          <p>Knowing what is normal, when to seek help, whether a provider is trustworthy, and what the next step looks like.</p>
+        </div>
+      </div>
+
+      <div class="growth-block" style="margin-top:26px;">
+        <div class="kicker">Consumer Journey</div>
+        <div class="journey">
+          <span>Question</span><b>→</b><span>Awareness</span><b>→</b><span>Education</span><b>→</b>
+          <span>Trust</span><b>→</b><span>Evaluation</span><b>→</b><span>Consultation</span>
+          <b>→</b><span>Appointment</span><b>→</b><span>Care</span><b>→</b><span>Advocacy</span>
+        </div>
+      </div>
+
+      <div class="growth-block" style="margin-top:26px;">
+        <div class="kicker">Content System</div>
+        <div class="growth-pillars">
+          <span>Fertility Education</span>
+          <span>Condition Awareness</span>
+          <span>Doctor Authority</span>
+          <span>Patient Proof</span>
+          <span>Treatment Education</span>
+          <span>Consultation Guidance</span>
+          <span>Myth / FAQ</span>
+        </div>
+      </div>
+
+      <div class="experiments">
+        <h4>Growth Experiments</h4>
+        <div class="experiment-grid">
+          <div class="experiment">
+            <b>Question hook vs statement hook</b>
+            <small>Measure: retention · saves · shares</small>
+          </div>
+          <div class="experiment">
+            <b>Doctor-led vs graphic-led</b>
+            <small>Measure: engagement quality · profile visits · consultation intent</small>
+          </div>
+          <div class="experiment">
+            <b>Education CTA vs appointment CTA</b>
+            <small>Measure: saves / shares · profile visits · enquiries</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="growth-funnel">
+        <strong>30-DAY SYSTEM</strong><br>
+        Awareness → Authority → Trust → Conversion<br>
+        <strong>MEASURE</strong> Reach → Watch Time / Retention → Saves / Shares → Profile Visits → DMs / Calls → Consultation Leads → Appointments
+      </div>
+    </article>
+
+    <div class="deepdive reveal" style="margin-top:34px;">
+      <div class="deepdive-top">
+        <div>
+          <h3>Cross-Case Strategy Framework</h3>
+          <span class="role-line">One framework, adapted to different consumer decision cycles.</span>
+        </div>
+      </div>
+      <div class="oar">
+        <div class="oar-block">
+          <div class="kicker">Masaki</div>
+          <p>Emotional and desire-led. Visual discovery and social proof can move audiences toward a lower-friction visit or purchase.</p>
+        </div>
+        <div class="oar-block">
+          <div class="kicker">Sunrise</div>
+          <p>Trust and information-led. Education, authority and reassurance support a higher-consideration path toward consultation.</p>
+        </div>
+        <div class="oar-block">
+          <div class="kicker">Common System</div>
+          <p>Consumer Insight → Persona → Journey → Content Hypothesis → Creative → Distribution → KPI → Experiment → Optimisation → Conversion.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="performance">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="case-no">CASE FILE 006</span>
+        <h2>Campaign Performance</h2>
+      </div>
+      <p class="section-kicker">Numbers pulled straight from the ad and analytics accounts.</p>
+    </div>
+
+    <div class="perf-block reveal">
+      <div class="perf-block-head"><h3>Paid Social — Lead Campaign Snapshot</h3></div>
+      <span class="perf-sub">Meta Ads Manager · Apr 1–30, 2026</span>
+      <div class="perf-grid">
+        <div class="stat-tile"><div class="num">₹5,539.59</div><div class="lbl">Total spend</div></div>
+        <div class="stat-tile"><div class="num">276.5K</div><div class="lbl">Impressions</div></div>
+        <div class="stat-tile"><div class="num">141.1K</div><div class="lbl">Reach</div></div>
+      </div>
+      <div class="platform-split" style="grid-template-columns:1fr;">
+        <div class="platform-card">
+          <h4>Top ad — New Leads Ad</h4>
+          <div class="row"><span>CPM</span><b>₹20.04</b></div>
+          <div class="row"><span>Spend</span><b>₹5,401.12</b></div>
+          <div class="row"><span>Impressions</span><b>273,408</b></div>
+          <div class="row"><span>Reach</span><b>140,244</b></div>
+          <div class="row"><span>Cost per 1,000 reached</span><b>₹39.27</b></div>
+        </div>
+      </div>
+      <span class="source">Calculated from the totals visible in the supplied Ads Manager screenshot · Apr 1–30, 2026</span>
+    </div>
+
+    <div class="perf-block reveal">
+      <div class="perf-block-head"><h3>Organic Content Performance — "Go With Sameer"</h3></div>
+      <span class="perf-sub">5 posts · May 6–13, 2026 · Instagram + Facebook exports</span>
+      <div class="perf-grid">
+        <div class="stat-tile"><div class="num">3.77M</div><div class="lbl">Instagram views</div></div>
+        <div class="stat-tile"><div class="num">2.14M</div><div class="lbl">Instagram reach</div></div>
+        <div class="stat-tile"><div class="num">211.9K</div><div class="lbl">Instagram engagements</div></div>
+      </div>
+      <div class="platform-split">
+        <div class="platform-card">
+          <h4>Instagram</h4>
+          <div class="row"><span>Engagements / reach</span><b>9.9%</b></div>
+          <div class="row"><span>Shares · Saves</span><b>22.6K · 13.2K</b></div>
+          <div class="row"><span>New follows</span><b>4,627</b></div>
+        </div>
+        <div class="platform-card">
+          <h4>Facebook</h4>
+          <div class="row"><span>Views</span><b>510.7K</b></div>
+          <div class="row"><span>Reach</span><b>508.0K</b></div>
+          <div class="row"><span>Engagements · Clicks</span><b>19.3K · 5.2K</b></div>
+        </div>
+      </div>
+      <p class="perf-note">Instagram was the stronger organic distribution channel in this sample, while Facebook added 510K+ views and 5K+ clicks. Platform totals are reported separately and should not be treated as unique cross-platform users.</p>
+      <span class="source">Source: Meta / Instagram export · May 6–13, 2026</span>
+    </div>
+
+    <div class="perf-block reveal">
+      <div class="perf-block-head"><h3>Content-Level Case Study — Best-Performing Reel</h3></div>
+      <span class="perf-sub">IG reel · Published May 6, 2026</span>
+      <div class="reel-card">
+        <div class="reel-title">"Maahii-e-be-aab sa…"</div>
+        <div class="reel-stats">
+          <div><div class="num">1.54M</div><div class="lbl">Views</div></div>
+          <div><div class="num">1.12M</div><div class="lbl">Reach</div></div>
+          <div><div class="num">118.8K</div><div class="lbl">Likes</div></div>
+          <div><div class="num">20.7K</div><div class="lbl">Shares</div></div>
+          <div><div class="num">11.4K</div><div class="lbl">Saves</div></div>
+          <div><div class="num">4,532</div><div class="lbl">Follows</div></div>
+        </div>
+      </div>
+      <p class="perf-note">The strongest post combined high distribution with high-intent engagement signals: shares, saves and follows — a useful example of using post-level data to identify formats worth repeating and scaling.</p>
+      <span class="source">Source: supplied Instagram export · May 6–13, 2026</span>
+    </div>
+
+    <div class="perf-block reveal">
+      <div class="perf-block-head"><h3>YouTube Channel Snapshot</h3></div>
+      <span class="perf-sub">Recent reporting period</span>
+      <div class="perf-grid">
+        <div class="stat-tile"><div class="num">229.6K</div><div class="lbl">Views</div></div>
+        <div class="stat-tile"><div class="num">996</div><div class="lbl">Watch time (hours)</div></div>
+        <div class="stat-tile"><div class="num">484</div><div class="lbl">New subscribers</div></div>
+      </div>
+      <div class="perf-grid">
+        <div class="stat-tile"><div class="num">46.5K</div><div class="lbl">Impressions</div></div>
+        <div class="stat-tile"><div class="num">10.02%</div><div class="lbl">Impressions click-through rate</div></div>
+        <div class="stat-tile" style="display:flex; align-items:center;"><div class="lbl">Daily views trend →</div></div>
+      </div>
+      <div class="yt-bars" id="ytBars"></div>
+      <span class="source" style="margin-top:36px;">Source: YouTube Studio export</span>
+    </div>
+  </div>
+</section>
+
+<section id="clients">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="case-no">CASE FILE 007</span>
+        <h2>Selected Clients</h2>
+      </div>
+      <p class="section-kicker">Accounts strategised, scripted, and grown.</p>
+    </div>
+    <div class="client-row reveal">
+      <div class="client-tile">
+        <div>
+          <div class="name">WMS Dubai</div>
+          <div class="cat">Logistics · B2B</div>
+        </div>
+        <div class="go">LinkedIn strategy</div>
+      </div>
+      <a class="client-tile" href="https://www.instagram.com/sunrisehospital" target="_blank" rel="noopener">
+        <div>
+          <div class="name">Sunrise Hospital</div>
+          <div class="cat">Healthcare</div>
+        </div>
+        <div class="go">@sunrisehospital →</div>
+      </a>
+      <a class="client-tile" href="https://www.instagram.com/thslucknow" target="_blank" rel="noopener">
+        <div>
+          <div class="name">THS Lucknow</div>
+          <div class="cat">Local Business</div>
+        </div>
+        <div class="go">@thslucknow →</div>
+      </a>
+      <a class="client-tile" href="https://www.instagram.com/masaki.couture.cafe" target="_blank" rel="noopener">
+        <div>
+          <div class="name">Masaki Couture Café</div>
+          <div class="cat">F&amp;B · Lifestyle</div>
+        </div>
+        <div class="go">@masaki.couture.cafe →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="case-no">CASE FILE 008</span>
+        <h2>Education &amp; Credentials</h2>
+      </div>
+      <p class="section-kicker">The foundation behind the work.</p>
+    </div>
+    <div class="edu-grid reveal">
+      <div class="edu-card">
+        <h3>B.B.A. in Business Administration</h3>
+        <div class="place">SRM Institute of Science &amp; Technology</div>
+        <div class="meta">Chennai, India · Jan 2022 – May 2025</div>
+        <div class="gpa"><span class="num">9.33</span><span class="lbl">CGPA</span></div>
+        <p style="color:var(--ink-70); font-size:14.5px; margin-top:14px;">Business, marketing and analytical foundation.</p>
+
+        <div class="positioning">
+          <div class="lbl">Current Positioning</div>
+          <div class="val">Social Media Strategist · MarTech / Marketing Automation</div>
+          <div class="open">Open to full-time opportunities</div>
+        </div>
+      </div>
+      <div class="edu-card">
+        <h3>Certifications</h3>
+        <ul class="cert-list">
+          <li>ChatGPT For Excel — Great Learning, Jan 2024</li>
+          <li>Introduction to Digital Marketing — Great Learning, Aug 2023</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <span class="eyebrow" style="color:var(--coral);">Case File 009</span>
+    <h2>Let's build measurable growth.</h2>
+    <p class="lede">Social Media Strategist · MarTech / Marketing Automation — open to full-time opportunities.</p>
+    <div class="contact-links">
+      <a href="mailto:gulatinavyanshi@gmail.com">
+        <div class="k">Email</div>
+        <div class="v">gulatinavyanshi@gmail.com</div>
+      </a>
+      <a href="tel:+918874934816">
+        <div class="k">Phone</div>
+        <div class="v">+91 88749 34816</div>
+      </a>
+      <a href="https://www.linkedin.com/in/navyanshi-gulati-76aa80266" target="_blank" rel="noopener">
+        <div class="k">LinkedIn</div>
+        <div class="v">/in/navyanshi-gulati-76aa80266</div>
+      </a>
+      <a href="https://www.instagram.com/sunrisehospital" target="_blank" rel="noopener">
+        <div class="k">Featured Work</div>
+        <div class="v">@sunrisehospital</div>
+      </a>
+    </div>
+    <div class="foot-meta">
+      <span>© 2026 Navyanshi Gulati</span>
+      <span>Built for the web from a case-study portfolio</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Ticker content, duplicated once for seamless loop
+  const items = [
+    ["8K VIEWS · +35% ENGAGEMENT", "SUNRISE HOSPITAL"],
+    ["+40% REACH GROWTH", "WMS DUBAI"],
+    ["3.77M INSTAGRAM VIEWS", "GO WITH SAMEER"],
+    ["₹39.27 COST PER 1K REACHED", "META ADS · APR 2026"],
+    ["229.6K YOUTUBE VIEWS", "10.02% CTR"],
+    ["1 CONFERENCE INVITE", "WITH KIRAN BEDI"],
+  ];
+  const track = document.getElementById('tickerTrack');
+  function buildTicker(){
+    let html = '';
+    for(let r=0;r<2;r++){
+      items.forEach(([stat, ctx])=>{
+        html += `<span class="ticker-item"><b>${stat}</b><span class="sep">//</span>${ctx}</span>`;
+      });
+    }
+    track.innerHTML = html;
+  }
+  buildTicker();
+
+  // Reveal on scroll (with generous margins + safety fallback so content
+  // never stays hidden if IntersectionObserver misbehaves)
+  const revealEls = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, {threshold:0.01, rootMargin:'0px 0px -5% 0px'});
+    revealEls.forEach(el=>io.observe(el));
+  } else {
+    revealEls.forEach(el=>el.classList.add('in'));
+  }
+  // Safety net: reveal everything shortly after load regardless
+  window.addEventListener('load', ()=>{
+    setTimeout(()=>revealEls.forEach(el=>el.classList.add('in')), 1200);
+  });
+
+  // YouTube daily views bar chart
+  const ytData = [
+    {d:'May 6', v:39693},
+    {d:'May 7', v:148441},
+    {d:'May 8', v:36430},
+    {d:'May 9', v:3069},
+  ];
+  const max = Math.max(...ytData.map(x=>x.v));
+  const bars = document.getElementById('ytBars');
+  ytData.forEach(x=>{
+    const bar = document.createElement('div');
+    bar.className = 'yt-bar';
+    bar.style.height = Math.max(6, (x.v/max)*100) + '%';
+    bar.innerHTML = `<span class="v">${(x.v/1000).toFixed(0)}K</span><span class="d">${x.d}</span>`;
+    bars.appendChild(bar);
+  });
+</script>
+
+</body>
+</html>
